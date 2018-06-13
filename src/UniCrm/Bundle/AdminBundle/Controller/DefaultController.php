@@ -1,6 +1,6 @@
 <?php
 
-namespace UniCrm\Bundle\CoreBundle\Controller;
+namespace UniCrm\Bundle\AdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return new \Symfony\Component\HttpFoundation\Response('hi');
+        return $this->render('UniAdminBundle:Default:index.html.twig');
     }
 }

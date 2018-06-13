@@ -1,3 +1,4 @@
-uni_admin_homepage:
-    path:     /
-    defaults: { _controller: UniAdminBundle:Default:index }
+uni_admin:
+    resource: "@UniAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
